@@ -44,9 +44,9 @@ p {
   margin-bottom: 1.2rem;
 }
 main {
-  max-width: 110rem;
+  max-width: 100rem;
   margin: 0 auto;
-  padding: 12rem 0;
+  padding: 12rem 10rem;
 }
 .text {
   display: grid;
@@ -105,4 +105,26 @@ footer {
 }
 .img-box:nth-of-type(2), .img-box:nth-of-type(5) {
   transform: translateY(25%);
+}
+
+@media (max-width: 800px) {
+  main {
+    padding: 6.4rem 2.4rem;
+  }
+  .text {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+  .image-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .img-box:nth-child(even) {
+    transform: translateY(25%);
+  }
+  .img-box:nth-of-type(5) {
+    transform: translateY(0);
+  }
+  footer {
+    margin-top: 8rem;
+  }
 }
