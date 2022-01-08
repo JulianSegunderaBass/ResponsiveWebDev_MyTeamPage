@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif; 
+*/
+
+/* 
+? --Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+? --Whitespace Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+:root {
+  --light: #FAFAFA;
+  --dark: #000000;
+  --gray: #BDBDBD;
+  --gray-darker: #A9A9A9;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1.2rem 2.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--gray);
+}
+.user-footer a, .user-footer a:visited {
+  color: var(--gray-darker);
+  text-decoration: none;
+}
+.username {
+  font-weight: 700;
+  text-decoration: underline;
+}
